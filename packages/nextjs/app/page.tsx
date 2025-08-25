@@ -1,4 +1,6 @@
 "use client";
+import TokenFarmHome from "~~/components/Home";
+
 
 import Link from "next/link";
 import type { NextPage } from "next";
@@ -21,6 +23,11 @@ const Home: NextPage = () => {
             <p className="my-2 font-medium">Connected Address:</p>
             <Address address={connectedAddress} />
           </div>
+
+           <div className="mt-10">
+            <TokenFarmHome />
+            </div>
+
           <p className="text-center text-lg">
             Get started by editing{" "}
             <code className="italic bg-base-300 text-base font-bold max-w-full break-words break-all inline-block">
